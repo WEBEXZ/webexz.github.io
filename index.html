@@ -3,21 +3,23 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <script type="text/javascript" src="javascripts/main.js"></script>
     <title>Blog de Webexz</title>
   </head>
 
   <body>
-
     <header>
       <div class="container">
-        <h1>Learning different programming styles.</h1>
-        <h2>By Carlos Carrera</h2>
-
+        <h1>Comandos para reparaciones de equipos</h1>
+        <h2>Carlos Carrera</h2>
+        <h3 id="usuario">
+          <script type="text/javascript">
+            Informacion.navegador();
+          </script>
+        </h3>
         <section id="downloads">
           <a href="https://github.com/WEBEXZ" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
@@ -27,28 +29,17 @@
     <div class="container">
       <section id="main_content">
         <h1>
-<a id="programación-funcional" class="anchor" href="#programaci%C3%B3n-funcional" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programación Funcional.</h1>
-
-<p>Alonzo Church desarrolló un sistema formal llamado Cálculo Lambda, el cual se basa en funciones que toman otras funciones como argumentos, y que devuelven funciones como resultado. La función se identifica con la letra griega Lambda(λ).</p>
-
-<p>Los aspectos que me causaron interés fueron que la primer máquina que resolvía tablas de balística fue Mark I y que el Cálculo Lambda y la máquina de Turing son equivalentes en potencia.</p>
-
-<p>En la programacion lógica podemos notar que:</p>
-
-<p>Lo que importa o es relevante en todo momento son los argumentos y los retornos, no hay variables mutables, esto quiere decir, que no puede cambiar su valor. Los programas funcionales pueden mantener un estado(aunque Alonzo Church no pensó hacerlo de esa forma o que tuviera esa perspectiva), para ello podemos hacer uso de la recursividad.</p>
-
-<p>Sus actualizaciones son rápidas de hacer, con Tail Recursion podemos optimizar recursos.</p>
-
-<p>Las funciones de orden superior, son aquellas funciones que operan sobre otras funciones, con ello podemos hacer que tengan un comportamiento diferente en diversos escenarios/aspectos y el Currying(Currificando), es como una "envoltura" de otras funciones <code>g(x)(y) = x + y</code>.</p>
-
-<p>La evaluación tardía, es llamar a una función solo cuando sea necesaria, para asignarle un orden empleamos continuaciones(CPS).</p>
-
-<p>**No pueden causar efectos colaterales(lenguaje funcional puro).</p>
-
-<hr>
+          <a id="programación-funcional" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comandos revisados en Windows 7, 8, 10
+        </h1>
+        <p>Para utilizarlos, necesitamos un dispositivo de almacenamiento con el  OS; debemos tomar en cuenta el OS que estamos reparando, para poder utilizar su herramienta de reparación adecuada</p>
+        <ul>
+          <li>bootrec /fixboot</li>
+          <li>bootrec /fixmbr</li>
+          <li>sfc /scannow</li>
+          <li>chkdsk /f/r/x</li>
+        </ul>
+        <hr>
       </section>
     </div>
-
-    
   </body>
 </html>
