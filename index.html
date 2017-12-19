@@ -37,6 +37,15 @@
           <li>chkdsk /f/r/x</li>(Comprueba la integridad de unidades del disco duro y repara errores lógicos en el sistema de archivos)
         </ul>
         <hr>
+        <h1>
+          <a class="anchor" aria-hidden="true">Protocolo HTTPS<span class="octicon octicon-link"></span></a>
+        </h1>
+        <p>Para utilizar el protocolo HTTPS en Apache agregar las siguientes lineas al archivo .htaccess.</p>
+        <ul>
+          <li>RewriteCond %{HTTPS} !on</li><br><br>
+          <li>RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</li><br><br>
+        </ul>
+        <hr>
       </section>
     </div>
   </body>
